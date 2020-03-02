@@ -1,0 +1,9 @@
+readonly=1
+syslog=1
+depends=1.500
+name=Nginx
+desc=Nginx Web Server
+longdesc=Nginx Web Server Manager.
+category=servers
+os_support=freebsd
+version=0.12

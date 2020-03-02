@@ -1,0 +1,6 @@
+=======================
+= Nginx Webmin Module =
+=======================
+Version       Description
+
+0.12..........Initial Nginx Webmin Module release for FreeBSD.

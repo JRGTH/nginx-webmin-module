@@ -1,0 +1,61 @@
+index_title=Nginx Web Server
+index_errconf=The Nginx server config file $1 was not found on your system. Maybe Nginx is not installed, or your <a href='$2'>module configuration</a> is incorrect.
+index_errapp=The Nginx server program $1 was not found on your system. Maybe Nginx is not installed, or your <a href='$2'>module configuration</a> is incorrect.
+index_version=nginx version $1
+index_defserv=Default Host
+index_select=Select Servers
+index_status=Status
+index_name=Server Name
+index_addr=Address
+index_port=Port
+index_root=Document Root
+index_url=URL
+index_view=View
+index_globalconf=Global Configuration
+index_existvhosts=Existing Virtual Hosts
+index_createvhosts=Create Virtual Host
+index_details=Server Details
+
+error_fileexist=This following file already exists:
+error_conferror=config errors, probably with your newest host.
+error_linkerr=Symlink couldn't be created.
+error_reload=will not reload
+error_restart=will not restart
+error_start=will not start
+error_update=Error while attempting to delete virtual server
+error_linkremove=The link was not removed for:
+
+create_servername=Server Name
+create_config=Config
+
+opt_select=Select action...
+opt_enable=Enable
+opt_disable=Disable
+opt_delete=Delete
+btn_submit=Save
+
+status_enabled=Enabled
+status_disabled=Disabled
+
+gl_edit=Edit nginx.conf
+gl_proxy=Edit proxy.conf
+gl_details=View nginx details
+
+manual_title=Edit Config File
+manual_header=Use the text box below to manually edit the nginx config file for $1.
+manual_editnote=Note: Be careful, as no validation will be performed on your input!
+
+nginx_apply=Apply Changes
+nginx_stop=Stop nginx
+nginx_start=Start nginx
+
+#stop_nginx=nginx stopped manually
+stop_epid=Failed to open PID file
+stop_esig=Failed to send SIGTERM to process $1
+
+#start_nginx=nginx started manually
+start_err=Failed to start nginx
+
+test_err=Couldn't test nginx configuration
+
+msg_reload=Notice: Changes may not apply until Nginx is reloaded. <a href="reload.cgi?redir=/nginx/">Apply Changes</a>
