@@ -3,5 +3,6 @@
 =======================
 Version    Description
 
+0.1.4......Fix get version/info from custom version cmd.
 0.1.3......Minor cosmetic changes, bump version.
 0.1.2......Initial Nginx Webmin Module release for FreeBSD.
