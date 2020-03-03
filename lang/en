@@ -3,7 +3,7 @@ index_errconf=The Nginx server config file $1 was not found on your system. Mayb
 index_errapp=The Nginx server program $1 was not found on your system. Maybe Nginx is not installed, or your <a href='$2'>module configuration</a> is incorrect.
 index_version=nginx version $1
 index_defserv=Default Host
-index_select=Select Servers
+index_select=Select
 index_status=Status
 index_name=Server Name
 index_addr=Address
@@ -24,6 +24,7 @@ error_restart=will not restart
 error_start=will not start
 error_update=Error while attempting to delete virtual server
 error_linkremove=The link was not removed for:
+error_test=Couldn't test nginx configuration
 
 create_servername=Server Name
 create_config=Config
@@ -55,7 +56,5 @@ stop_esig=Failed to send SIGTERM to process $1
 
 #start_nginx=nginx started manually
 start_err=Failed to start nginx
-
-test_err=Couldn't test nginx configuration
 
 msg_reload=Notice: Changes may not apply until Nginx is reloaded. <a href="reload.cgi?redir=/nginx/">Apply Changes</a>

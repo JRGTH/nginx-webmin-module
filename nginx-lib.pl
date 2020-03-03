@@ -197,7 +197,7 @@ sub test_config
 	#elsif ($out =~ /successful/) {
 			return undef;
 		}
-		return $text{'test_err'};
+		return $text{'error_test'};
 	}
 	return undef;
 }
