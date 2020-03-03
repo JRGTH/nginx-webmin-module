@@ -28,29 +28,31 @@ sub get_servers
 sub get_nginx_info
 {
 	if ($config{'nginx_version'}) {
-		# function not yet supported
+		$info_cmd = &backquote_command("$config{'nginx_version'} 2>&1");
+		
 	} else {
-		my $info = &backquote_command("nginx -V 2>&1");
-		my @args = split(/--/,$info);
-		my %vars;
-		my $i = 0;
-		foreach (@args) {
-			if ($_ =~ /version/) {
-				my @a = split(/\//,$_);
-				my @ver = split(' ',@a[1]);
-				$vars{'version'} = @ver[0];
-			}
-			elsif ($_ =~ /=/) {
-				my @a = split(/=/,$_);
-				$vars{@a[0]} = @a[1];
-			}
-			else {
-				$vars{"extra_info-$i"} = $_;
-				$i++;
-			}
-		}
-		return %vars;
+		$info_cmd = &backquote_command("nginx -V 2>&1");
 	}
+	my $info = $info_cmd;
+	my @args = split(/--/,$info);
+	my %vars;
+	my $i = 0;
+	foreach (@args) {
+		if ($_ =~ /version/) {
+			my @a = split(/\//,$_);
+			my @ver = split(' ',@a[1]);
+			$vars{'version'} = @ver[0];
+		}
+		elsif ($_ =~ /=/) {
+			my @a = split(/=/,$_);
+			$vars{@a[0]} = @a[1];
+		}
+		else {
+			$vars{"extra_info-$i"} = $_;
+			$i++;
+		}
+	}
+	return %vars;
 }
 
 sub is_nginx_running

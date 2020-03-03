@@ -13,7 +13,7 @@ if (!-r $config{'nginx_conf'}) {
 		"$gconfig{'webprefix'}/config.cgi?$module_name"),"<p>\n";
 	&ui_print_footer("/", $text{"index"});
 	exit;
-	}
+}
 
 # check if nginx exists
 if (!&has_command($config{'nginx_path'})) {
@@ -22,7 +22,7 @@ if (!&has_command($config{'nginx_path'})) {
 		"$gconfig{'webprefix'}/config.cgi?$module_name"),"<p>\n";
 	&ui_print_footer("/", $text{"index"});
 	exit;
-	}
+}
 
 # add virtual servers
 my @virts = &get_servers();
