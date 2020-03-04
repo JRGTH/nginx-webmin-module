@@ -3,9 +3,9 @@ Nginx Webmin Module
 
 **Description:**
 
-This Nginx Webserver module is based on the original Webmin module developed by [Justin D Hoffman](https://www.justindhoffman.com/project/nginx-webmin-module), however this version has been optimized solely for FreeBSD and/or FreeBSD/Jailed Nginx environments.
+This Nginx Webserver module is based on the original Webmin module developed by [Justin D Hoffman](https://www.justindhoffman.com/project/nginx-webmin-module), however this version has been optimized for FreeBSD and/or FreeBSD/Jailed Nginx environments.
 
-*"This project aims to give a user interface to those wishing to update nginx settings through webmin and to use nginx to server up some pages. Sometimes it's faster to not use the command line to fix everything or set up a new site. With this webmin module you'll be able to work on your nginx server from webmin."*
+*Configure Nginx settings through the Webmin interface for convenience.*
 
 **Features:**
 
